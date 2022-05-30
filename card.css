@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #fff;
+    
+}
+section{
+    width: 100%;
+    height:100vh ;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+section::before{
+    content: "";
+    width: 100%;
+    height:50vh ;
+    background: rgb(63, 113, 252);
+    position: absolute;
+}
+.ok{
+    position: absolute;
+    z-index: 1000;
+    top: 25%;
+    width: 50%;
+    height:50vh ;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,0,0,0.09);
+    border-bottom:  1px solid rgba(0,0,0,0.09);
+    backdrop-filter: blur(25px);
+    border-radius: 9px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p{
+   top: 11%;
+    position: relative;
+    height:50vh;
+    width: 90%;
+    background: url(fanwithlightrander.png);
+    
+    /* background-size: ; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.o{
+    /* margin-top: 20%; */
+    bottom: 5%;
+    position: relative;
+    height:50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12%;
+    text-align: center;
+    font-weight: 400;
+}
+@media (min-width:600px){
+.ok{
+    position: absolute;
+    z-index: 1000;
+    top: 25%;
+    width: 50%;
+    height:50vh ;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,0,0,0.09);
+    border-bottom:  1px solid rgba(0,0,0,0.09);
+    backdrop-filter: blur(25px);
+    border-radius: 9px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.p{
+  margin-right: 8%;
+    position: relative;
+    height:30vh;
+    width: 90%;
+    background: url(fanwithlightrander.png);
+    /* background-color: tomato; */
+    /* background-size: ; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.o{
+    /* margin-top: 20%; */
+    /* bottom: 5%; */
+    position: relative;
+    height:50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    /* background-color: rgb(206, 255, 71); */
+}
+}
